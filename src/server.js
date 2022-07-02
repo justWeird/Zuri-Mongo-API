@@ -2,6 +2,10 @@
 const express = require("express");
 const router = require("./router/todoRouter");
 const dotenv = require("dotenv").config();
+const connectDB = require("./config/todoDB");
+
+//initialize mongodb
+connectDB();
 
 //initialize express
 const app = express();
@@ -10,7 +14,7 @@ const app = express();
 app.use(express.json());
 
 //test request
-app.get('/', (req, res) => {
+app.get("/", (req, res) => {
   res.status(200).json({
     Message: "Moshi moshi",
   });
