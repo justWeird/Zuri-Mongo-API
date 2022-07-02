@@ -1,0 +1,21 @@
+{
+  "name": "zuri-mongo-api",
+  "version": "1.0.0",
+  "description": "A simple To-do node js project that implements express and mongodb.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node ./src/server",
+    "dev": "nodemon ./src/server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.18"
+  }
+}
